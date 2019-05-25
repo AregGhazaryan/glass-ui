@@ -17,4 +17,17 @@
   .list-item.selected {
     color: @text-color-selected;
   }
+
+  .file{
+    transition: 0.2s;
+
+      &.selected {
+      border-bottom: 2px solid red;
+      transition: 0.2s;
+    }
+  }
+}
+
+.atom-dock-resize-handle{
+  border-right:1px solid rgba(255, 0, 0, 0.25);
 }

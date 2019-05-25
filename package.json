@@ -1,11 +1,21 @@
 {
-  "name": "ui-theme-template",
+  "name": "glass-ui",
   "theme": "ui",
-  "version": "0.0.0",
-  "description": "A short description of your UI theme",
+  "version": "1.0.0",
+  "description": "Pure, Bright, Light",
   "keywords": [
     "ui",
-    "theme"
+    "theme",
+    "glass-ui",
+    "glass",
+    "mirror's edge",
+    "pure",
+    "bight",
+    "light",
+    "white",
+    "red",
+    "colorful",
+    "minimalism"
   ],
   "repository": "https://github.com/atom-community/ui-theme-template",
   "license": "MIT",
