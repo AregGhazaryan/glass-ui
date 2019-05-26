@@ -6,9 +6,11 @@
 // Displays information about the current editor.
 // Overrides: atom/status-bar
 
-.status-bar {
+.status-bar > div{
+  height: 30px;
+  align-items: baseline;
   font-size: @font-size;
   color: @text-color;
-  border-top: 1px solid @base-border-color;
+  border-top: 1px solid  rgba(255, 0, 0, 0.25);
   background-color: @tree-view-background-color;
 }

@@ -8,17 +8,16 @@
 .btn {
   color: lighten(@text-color, 6%);
   background-color: @button-background-color;
-  &:hover,
   &:focus {
-    color: @text-color-highlight;
+    color: white !important;
     background-color: @button-background-color-hover;
   }
   &:active {
-    color: fade(@text-color-selected, 66%);
+    color: white !important;
     background-color: darken(@button-background-color, 2%);
   }
   &.selected {
-    color: @text-color-selected;
+    color: rgb(189, 0, 255);
     background-color: @button-background-color-selected;
   }
   &:focus,
@@ -37,7 +36,7 @@
 .btn.btn-error   { .btn-color(@background-color-error); }
 
 .btn-color(@bg) {
-  color: @text-color-selected;
+  color: white !important;
   background-color: @bg;
   &:hover,
   &:focus {

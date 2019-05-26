@@ -3,27 +3,41 @@
 // Displays selectable tabs above the editor.
 // Overrides: atom/tabs
 
-
 .tab-bar {
   background-color: @tab-bar-background-color;
-  border-bottom: 1px solid @base-border-color;
 
   .tab {
     color: @text-color;
     height: @tab-height;
     line-height: @tab-height;
     font-size: @font-size;
-    clip-path: polygon(calc(0% + 5px) calc(0% + 5px), calc(100% - 5px) calc(0% + 5px), calc(100% - 5px) calc(100% - 5px), calc(0% + 5px) calc(100% - 5px));
     transition: clip-path 0.1s linear;
-
+    flex: 4 !important;
+    overflow: none;
+    max-width: none !important;
+    min-width: none !important;
+    transition: 0.3s;
 
     &.active {
-      border-bottom: 2px solid red;
-      color: @text-color-selected;
-      background-color: @tab-background-color-active;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
+          transition: 0.2s;
+          color: white !important;
+          background-color: rgb(255,0,0);
+          background: -webkit-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
+          background: -o-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
+          background: linear-gradient(to right, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
+          box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
+          background-position: 200px;
+          color: white;
 
+          .close-icon:hover {
+            cursor: pointer;
+            color: white !important;
+          }
+        }
+
+    &:hover{
+      transition: 0.2s;
+    }
     // Modified Icon (the circle) -------------------
     &.modified:not(:hover) .close-icon {
       top: 50%;
@@ -37,10 +51,12 @@
     }
     // Close Icon (the X) -------------------
     .close-icon:hover {
+      cursor: pointer;
       color: @text-color-selected;
     }
 
     &.active .close-icon:hover {
+      cursor: pointer;
       color: @text-color;
     }
     // Dragging -------------------
@@ -51,6 +67,7 @@
       opacity: 0.5;
 
       & .close-icon {
+        cursor: pointer;
         visibility: hidden;
       }
     }
