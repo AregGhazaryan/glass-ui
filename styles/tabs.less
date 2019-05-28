@@ -7,6 +7,7 @@
   background-color: @tab-bar-background-color;
 
   .tab {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
     color: @text-color;
     height: @tab-height;
     line-height: @tab-height;
@@ -15,24 +16,30 @@
     overflow: none;
     max-width: none !important;
     min-width: none !important;
-    transition: 0.3s;
+    transition: 0.5s;
+    color:white !important;
+    background-color: rgb(255,0,0);
+    background: -webkit-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
+    background: -o-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
+    background: linear-gradient(to right, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
+    background-position: 200px;
+
+    .close-icon{
+      border-color:white !Important;
+    }
 
     &.active {
+          background:white !Important;
           transition: 0.2s;
-          color: white !important;
-          background-color: rgb(255,0,0);
-          background: -webkit-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
-          background: -o-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
-          background: linear-gradient(to right, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
-          box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
-          background-position: 200px;
+          color: red !important;
 
           .close-icon:hover {
             cursor: pointer;
-            color: white !important;
+          }
+          .close-icon{
+            border-color: @text-color-highlight !important;
           }
         }
-
     &:hover{
       transition: 0.2s;
     }
