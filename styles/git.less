@@ -18,11 +18,9 @@
 .github-CommitView-button{
   color:white !important;
 }
-.github-CommitView-coAuthorToggle{
-  background-color: white;
-}
-.github-CommitView-expandButton{
-  background-color:white;
+.github-CommitView-expandButton,.github-CommitView-coAuthorToggle{
+  background-color:white !important;
+  opacity: 1;
 }
 }
 
@@ -40,6 +38,11 @@
 
 .github-CommitView-buttonWrapper{
   border-color:@border-color;
+  .btn{
+    cursor:pointer;
+    background-color: rgb(255, 0, 69);
+    color:white;
+  }
 }
 
 .github-RecentCommits{
