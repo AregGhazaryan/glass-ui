@@ -2,4 +2,5 @@
 
 Introducing you, Glass UI. Bright and light minimalistic UI inspired by Mirror's Edge design.
 
-![Atom-Glass-UI](https://user-images.githubusercontent.com/38076644/58381491-9289b680-7fce-11e9-86f1-19bd3f9bf4c4.png)
+![Capture](https://user-images.githubusercontent.com/38076644/58652584-fbea2c00-8324-11e9-8078-dc2856192da5.PNG)
+
