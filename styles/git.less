@@ -13,6 +13,7 @@
 
 .github-CommitView-editor{
   background-color:white !important;
+  border-color: @border-color;
 
 .github-CommitView-button{
   color:white !important;
@@ -23,4 +24,72 @@
 .github-CommitView-expandButton{
   background-color:white;
 }
+}
+
+.github-StagingView-header{
+  border-color: @border-color;
+}
+
+.github-StagingView-headerButton{
+  border-color: @border-color;
+}
+
+.github-CommitView-hardwrap{
+  background-color:white !important;
+}
+
+.github-CommitView-buttonWrapper{
+  border-color:@border-color;
+}
+
+.github-RecentCommits{
+  border-color:@border-color;
+}
+
+.github-Accordion-header{
+  border-color:@border-color;
+}
+
+.github-Accordion-content{
+  border-color:@border-color;
+}
+.github-StagingView-group {
+  .github-StagingView-header{
+    .icon::before{
+      color:red !important;
+    }
+  }
+}
+
+.github-StagingView-headerButton.icon:before{
+  text-align: center;
+}
+
+.github-StagingView-headerButton{
+  transition: 0.5s;
+  cursor: pointer;
+}
+.github-FilePatchView-controlBlock{
+  background-color:@border-color;
+}
+
+.github-FilePatchView-header{
+  background-color:@border-color;
+}
+
+.github-HunkHeaderView{
+  background-color:@border-color;
+}
+
+.github-HunkHeaderView-title, .github-HunkHeaderView-stageButton, .github-HunkHeaderView-discardButton{
+  &:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    background-color:white;
+    color:red !important;
+  }
+}
+
+.github-HunkHeaderView-stageButton, .github-HunkHeaderView-discardButton, .github-HunkHeaderView-title, .github-FilePatchView-title{
+  color:white !important;
 }

@@ -23,12 +23,17 @@
     background: -o-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
     background: linear-gradient(to right, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
     background-position: 200px;
-
+    .icon::before{
+      color:white !important;
+    }
     .close-icon{
       border-color:white !Important;
     }
 
     &.active {
+      .icon::before{
+        color:red !important;
+      }
           background:white !Important;
           transition: 0.2s;
           color: red !important;
