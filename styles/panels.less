@@ -1,7 +1,5 @@
-
 // Panels
 // -------------------
-
 // Overrides: atom/static/panels.less
 
 .panel-heading {
@@ -12,12 +10,11 @@
 
 .inset-panel {
   background-color: @inset-panel-background-color;
+
   .panel-heading {
     background-color: lighten(@inset-panel-background-color, 4%);
   }
 }
-
-
 // Modal -------------------
 // Used on top of the editor, like the Command Palette.
 
@@ -27,18 +24,35 @@ atom-panel.modal {
   box-shadow: 0 2px 8px 1px hsla(0,0%,0%,.3);
 }
 
-.panel-divider{
+.panel-divider {
   background: white !important;
-    border-top:1px solid @border-color;
+  border-top: 1px solid @border-color;
 }
 
-.input-block, .btn-toolbar{
-  padding:0 !important;
+.btn-toolbar,
+.input-block {
+  padding: 0 !important;
 }
-.btn-toolbar{
+
+.btn-toolbar {
   border-bottom: 1px solid @border-color !important;
 }
 
-.xterm{
-  background-color:white !important;
+.xterm {
+  background-color: white !important;
+}
+
+.modal {
+  .editor {
+    border: 1px solid @border-color;
+    background-color: white !important;
+
+    .highlights {
+      .highlight {
+        .selection {
+          background-color: @border-color !important;
+        }
+      }
+    }
+  }
 }
