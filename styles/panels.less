@@ -25,8 +25,10 @@ atom-panel.modal {
 }
 
 .panel-divider {
+  margin-top: 0 !important;
   background: white !important;
   border-top: 1px solid @border-color;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .btn-toolbar,
@@ -38,8 +40,30 @@ atom-panel.modal {
   border-bottom: 1px solid @border-color !important;
 }
 
-.xterm {
-  background-color: white !important;
+.platformio-ide-terminal {
+  .input-block {
+    height: max-content !important;
+    background-color: rgb(255,0,0);
+    background: -webkit-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
+    background: -o-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
+    background: linear-gradient(to right, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
+
+    .btn-toolbar {
+      border: none !important;
+
+      .btn-group {
+        .btn {
+          border: none;
+          background: none;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .xterm {
+    background-color: white !important;
+  }
 }
 
 .modal {
