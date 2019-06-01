@@ -31,14 +31,6 @@ atom-panel.modal {
   background-color: rgba(0, 0, 0, 0) !important;
 }
 
-.btn-toolbar,
-.input-block {
-  padding: 0 !important;
-}
-
-.btn-toolbar {
-  border-bottom: 1px solid @border-color !important;
-}
 
 .platformio-ide-terminal {
   .input-block {
@@ -50,7 +42,7 @@ atom-panel.modal {
 
     .btn-toolbar {
       border: none !important;
-
+        padding: 0 !important;
       .btn-group {
         .btn {
           border: none;
@@ -67,6 +59,24 @@ atom-panel.modal {
 }
 
 .modal {
+  .editor {
+    border: 1px solid @border-color;
+    background-color: white !important;
+
+    .highlights {
+      .highlight {
+        .selection {
+          background-color: @border-color !important;
+        }
+      }
+    }
+  }
+}
+
+.settings-view{
+  .btn::before{
+    vertical-align: sub;
+  }
   .editor {
     border: 1px solid @border-color;
     background-color: white !important;
