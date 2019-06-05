@@ -31,18 +31,19 @@ atom-panel.modal {
   background-color: rgba(0, 0, 0, 0) !important;
 }
 
-
 .platformio-ide-terminal {
   .input-block {
+    padding:0px !important;
     height: max-content !important;
-    background-color: rgb(255,0,0);
-    background: -webkit-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
-    background: -o-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
-    background: linear-gradient(to right, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
+    background: rgb(255,0,0);
+    background: -webkit-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(253,29,82,1) 50%, rgba(255,0,0,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(253,29,82,1) 50%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(to right, rgba(255,0,0,1) 0%, rgba(253,29,82,1) 50%, rgba(255,0,0,1) 100%);
 
     .btn-toolbar {
       border: none !important;
-        padding: 0 !important;
+      padding: 0 !important;
+
       .btn-group {
         .btn {
           border: none;
@@ -55,6 +56,9 @@ atom-panel.modal {
 
   .xterm {
     background-color: white !important;
+  }
+  .terminal{
+    font-family: 'Quicksand', sans-serif !important;
   }
 }
 
@@ -73,10 +77,11 @@ atom-panel.modal {
   }
 }
 
-.settings-view{
-  .btn::before{
+.settings-view {
+  .btn::before {
     vertical-align: sub;
   }
+
   .editor {
     border: 1px solid @border-color;
     background-color: white !important;
