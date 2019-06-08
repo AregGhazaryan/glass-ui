@@ -7,7 +7,7 @@
   background-color: @tab-bar-background-color;
 
   .tab {
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
+    box-shadow: 0 0.5rem 2rem rgba(0,0,0,.15) !important;
     color: @text-color;
     height: @tab-height;
     line-height: @tab-height;
@@ -17,35 +17,42 @@
     max-width: none !important;
     min-width: none !important;
     transition: 0.5s;
-    color:white !important;
+    color: white !important;
     background-color: rgb(255,0,0);
-    background: -webkit-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
-    background: -o-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
-    background: linear-gradient(to right, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
-    background-position: 200px;
-    .icon::before{
-      color:white !important;
+    background: linear-gradient(65deg, rgba(255, 56, 56, 1) 0%, rgba(242, 0, 37, 1) 48%, rgba(255, 56, 56, 1) 100%);
+    background-position: 12rem;
+
+    .icon::before {
+      color: white !important;
     }
-    .close-icon{
-      border-color:white !Important;
+
+    .close-icon {
+      border-color: white !Important;
+      &:hover{
+        color: white !Important;
+      }
     }
 
     &.active {
-      .icon::before{
-        color:red !important;
-      }
-          background:white !Important;
-          transition: 0.2s;
-          color: red !important;
 
-          .close-icon:hover {
-            cursor: pointer;
-          }
-          .close-icon{
-            border-color: @text-color-highlight !important;
-          }
-        }
-    &:hover{
+      .icon::before {
+        color: red !important;
+      }
+      background: white !Important;
+      transition: 0.2s;
+      color: red !important;
+
+      .close-icon:hover {
+        color:red !important;
+        cursor: pointer;
+      }
+
+      .close-icon {
+        border-color: @text-color-highlight !important;
+      }
+    }
+
+    &:hover {
       transition: 0.2s;
     }
     // Modified Icon (the circle) -------------------
