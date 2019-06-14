@@ -14,10 +14,7 @@
   color: @text-color;
   background-color: @tree-view-background-color;
 
-  .list-item.selected {
-  }
-
-  .file, .directory{
+  .file{
     transition: 0.5s;
 
   .icon::before{
@@ -39,6 +36,11 @@
   }
 }
 
+.directory{
+  .icon::before{
+  color:red;
+  }
+}
 
 
 
