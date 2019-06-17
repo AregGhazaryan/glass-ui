@@ -6,6 +6,7 @@
 // Overrides: atom/tree-view
 
 
+
 .tree-view-resizer {
   border-right: 1px solid @base-border-color;
 }
@@ -21,10 +22,11 @@
     color:red;
   }
       &.selected::before{
-        transition: 0.5s;
-        background: linear-gradient(to right, rgba(255, 0, 70, 1) 7%, rgba(238, 0, 0, 1) 42%, rgba(244, 0, 75, 1) 72%, rgba(255, 0, 70, 1) 92%);
-        background-position: 250px;
-      }
+              transition: 0.5s;
+              background: rgb(255,45,45);
+             background: linear-gradient(65deg, rgba(255,0,100,1) 0%, rgba(255,0,0,1) 50%, rgba(255,0,100,1) 100%);
+              background-position: 250px;
+            }
 
       &.selected {
         .icon::before{
