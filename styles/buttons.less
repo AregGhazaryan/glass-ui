@@ -6,7 +6,9 @@
   cursor: pointer;
   color: lighten(@text-color, 6%);
   background-color: @button-background-color;
-
+  &::before{
+    vertical-align: middle;
+  }
   &:focus {
     background-color: @button-background-color-hover;
   }
@@ -102,5 +104,11 @@
   &:hover{
     background: rgb(255, 0, 99) !important;
     transition: 0.5s;
+  }
+}
+
+.packages{
+  .icon-gear{
+    height: 31px !important;
   }
 }
