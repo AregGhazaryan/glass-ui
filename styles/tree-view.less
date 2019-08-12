@@ -1,54 +1,49 @@
-
 // Tree View
 // -------------------
-
 // Used to explore and open files in the current project.
 // Overrides: atom/tree-view
 
-
-
 .tree-view-resizer {
-  border-right: 1px solid @base-border-color;
+    border-right: 1px solid @base-border-color;
 }
 
 .tree-view {
-  color: @text-color;
-  background-color: @tree-view-background-color;
+    color: @text-color;
+    background-color: @tree-view-background-color;
 
-  .file{
-    transition: 0.5s;
+    .file {
+        transition: 0.5s;
 
-  .icon::before{
-    color:red;
-  }
-      &.selected::before{
-              transition: 0.5s;
-              background: rgb(255,45,45);
-             background: linear-gradient(65deg, rgba(255,0,100,1) 0%, rgba(255,0,0,1) 50%, rgba(255,0,100,1) 100%);
-              background-position: 250px;
-            }
-
-      &.selected {
-        .icon::before{
-          color:white !important;
+        .icon::before {
+            color: red;
         }
-        color: white !important;
+
+        &.selected::before {
+            transition: 0.5s;
+            background: rgb(255,45,45);
+            background: linear-gradient(65deg, rgba(255,0,100,1) 0%, rgba(255,0,0,1) 50%, rgba(255,0,100,1) 100%);
+            box-shadow: 0 0 1rem rgba(0,0,0,.15) !important;
+            background-position: 250px;
+        }
+
+        &.selected {
+            .icon::before {
+                color: white !important;
+            }
+            color: white !important;
+        }
     }
-
-  }
 }
 
-.directory{
-  .icon::before{
-  color:red;
-  }
+.directory {
+    .icon::before {
+        color: red;
+    }
 }
 
-
-
-.atom-dock-resize-handle{
-  z-index: 1;
-  background-color: white !important;
-  width: 5px !important;
-  border-right:1px solid rgba(255, 0, 0, 0.25);
+.atom-dock-resize-handle {
+    z-index: 1;
+    background-color: white !important;
+    width: 5px !important;
+    border-right: 1px solid rgba(255, 0, 0, 0.25);
 }

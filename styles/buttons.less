@@ -3,109 +3,111 @@
 // Overrides: atom/atom/static/buttons.less
 
 .btn {
-  cursor: pointer;
-  color: lighten(@text-color, 6%);
-  background-color: @button-background-color;
-  &::before{
-  }
-  &:focus {
-    background-color: @button-background-color-hover;
-  }
+    cursor: pointer;
+    color: lighten(@text-color, 6%);
+    background-color: @button-background-color;
 
-  &:active {
-    background-color: darken(@button-background-color, 2%);
-  }
+    &::before {}
 
-  &.selected {
-    color: rgb(189, 0, 255);
-    background-color: @button-background-color-selected;
-  }
+    &:focus {
+        background-color: @button-background-color-hover;
+    }
 
-  &:focus,
-  &:focus:active {
-    outline: none;
-  }
+    &:active {
+        background-color: darken(@button-background-color, 2%);
+    }
+
+    &.selected {
+        color: rgb(189, 0, 255);
+        background-color: @button-background-color-selected;
+    }
+
+    &:focus,
+    &:focus:active {
+        outline: none;
+    }
 }
 // Colored buttons -----------------------
 
 .btn.btn-primary {
-  .btn-color(@background-color-info);
+    .btn-color(@background-color-info);
 }
 
 .btn.btn-info {
-  .btn-color(@background-color-info);
+    .btn-color(@background-color-info);
 }
 
 .btn.btn-success {
-  .btn-color(@background-color-success);
+    .btn-color(@background-color-success);
 }
 
 .btn.btn-warning {
-  .btn-color(@background-color-warning);
+    .btn-color(@background-color-warning);
 }
 
 .btn.btn-error {
-  .btn-color(@background-color-error);
+    .btn-color(@background-color-error);
 }
 
 .btn-color(@bg) {
-  color: white !important;
-  background-color: @bg;
+    color: white !important;
+    background-color: @bg;
 
-  &:focus,
-  &:hover {
-    background-color: lighten(@bg, 4%);
-  }
+    &:focus,
+    &:hover {
+        background-color: lighten(@bg, 4%);
+    }
 
-  &:active {
-    background-color: darken(@bg, 4%);
-  }
+    &:active {
+        background-color: darken(@bg, 4%);
+    }
 
-  &.selected {
-    background-color: lighten(@bg, 4%);
-  }
+    &.selected {
+        background-color: lighten(@bg, 4%);
+    }
 
-  &.selected:focus,
-  &.selected:hover {
-    background-color: lighten(@bg, 8%);
-  }
+    &.selected:focus,
+    &.selected:hover {
+        background-color: lighten(@bg, 8%);
+    }
 }
 // Button Group -----------------------
 
 .btn-group > .btn {
-  border-color: hsla(0,0%,0%,.2);
+    border-color: hsla(0,0%,0%,.2);
 }
 
-.btn-default, .btn {
-  transition: 0.2s;
-  color: white !important;
-  background: rgb(255,0,0);
-
-  &.selected {
-    background: rgb(255, 0, 84) !important;
-  }
-
-  &:hover {
-    background: rgb(219, 0, 255) !important;
-    transition: 0.5s;
-  }
-
-  &:active {
+.btn,
+.btn-default {
+    transition: 0.2s;
+    color: white !important;
     background: rgb(255,0,0);
-  }
 
-  &:focus {
-    background: rgb(255,0,0);
-  }
+    &.selected {
+        background: rgb(255, 0, 84) !important;
+    }
+
+    &:hover {
+        background: rgb(0, 186, 255) !important;
+        transition: 0.5s;
+    }
+
+    &:active {
+        background: rgb(255,0,0);
+    }
+
+    &:focus {
+        background: rgb(255,0,0);
+    }
 }
 
-.btn-warning{
-  &:hover{
-    background: rgb(255, 0, 99) !important;
-    transition: 0.5s;
-  }
+.btn-warning {
+    &:hover {
+        background: rgb(255, 0, 99) !important;
+        transition: 0.5s;
+    }
 }
 
-select{
-  box-shadow: inset 0 1px 9px rgba(0, 0, 0, 0.075) !important;
+select {
+    box-shadow: inset 0 1px 9px rgba(0, 0, 0, 0.075) !important;
 }

@@ -2,97 +2,102 @@
 // -------------------
 // Overrides: atom/static/panels.less
 
+
 .panel-heading {
-  border-bottom: 1px solid @panel-heading-border-color;
-  background-color: @panel-heading-background-color;
-  border-radius: 100%;
+    border-bottom: 1px solid @panel-heading-border-color;
+    background-color: @panel-heading-background-color;
+    border-radius: 100%;
 }
 
 .inset-panel {
-  background-color: @inset-panel-background-color;
+    background-color: @inset-panel-background-color;
 
-  .panel-heading {
-    background-color: lighten(@inset-panel-background-color, 4%);
-  }
+    .panel-heading {
+        background-color: lighten(@inset-panel-background-color, 4%);
+    }
 }
 // Modal -------------------
 // Used on top of the editor, like the Command Palette.
 
 atom-panel.modal {
-  border: 1px solid @overlay-border-color;
-  border-top: none;
-  box-shadow: 0 2px 8px 1px hsla(0,0%,0%,.3);
+    border: 1px solid @overlay-border-color;
+    border-top: none;
+    box-shadow: 0 2px 8px 1px hsla(0,0%,0%,.3);
 }
 
 .panel-divider {
-  margin-top: 0 !important;
-  background: white !important;
-  border-top: 1px solid @border-color;
-  background-color: rgba(0, 0, 0, 0) !important;
+    margin-top: 0 !important;
+    background: white !important;
+    border-top: 1px solid @border-color;
+    background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .platformio-ide-terminal {
-  .input-block {
-    padding:0px !important;
-    height: max-content !important;
-    background: rgb(255,0,0);
-    background: linear-gradient(65deg, rgba(255, 52, 113, 1) 0%, rgba(244, 0, 0, 1) 50%, rgba(255, 52, 113, 1) 100%);
-    transition: 0.5s;
-    background-position: 22rem;
+    .input-block {
+        padding: 0 !important;
+        height: max-content !important;
+        background: rgb(255,0,0);
+        background: linear-gradient(65deg, rgba(255, 52, 113, 1) 0%, rgba(244, 0, 0, 1) 50%, rgba(255, 52, 113, 1) 100%);
+        transition: 0.5s;
+        background-position: 22rem;
 
-    .btn-toolbar {
-      border: none !important;
-      padding: 0 !important;
+        .btn-toolbar {
+            border: none !important;
+            padding: 0 !important;
 
-      .btn-group {
-        .btn {
-          border: none;
-          background: none;
-          color: white;
+            .btn-group {
+                .btn {
+                    border: none;
+                    background: none;
+                    color: white;
+                }
+            }
         }
-      }
     }
-  }
 
-  .xterm {
-    background-color: white !important;
-  }
-  .terminal{
-    font-family: 'Quicksand', sans-serif !important;
-  }
+    .xterm {
+        background-color: white !important;
+    }
+
+    .terminal {
+        font-family: 'Quicksand', sans-serif !important;
+    }
 }
 
 .modal {
-  .editor {
-    border: 1px solid @border-color;
-    background-color: white !important;
+    .editor {
+        border: 1px solid @border-color;
+        background-color: white !important;
 
-    .highlights {
-      .highlight {
-        .selection {
-          background-color: @border-color !important;
+        .highlights {
+            .highlight {
+                .selection {
+                    background-color: @border-color !important;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 .settings-view {
-  .btn::before {
-    vertical-align: sub;
-
-  }
-
-  .editor {
-    border: 1px solid @border-color;
-    background-color: white !important;
-
-    .highlights {
-      .highlight {
-        .selection {
-          background-color: @border-color !important;
-        }
-      }
+    .btn::before {
+        vertical-align: sub;
     }
-  }
+
+    .editor {
+        border: 1px solid @border-color;
+        background-color: white !important;
+
+        .highlights {
+            .highlight {
+                .selection {
+                    background-color: @border-color !important;
+                }
+            }
+        }
+    }
+}
+
+.atom-dock-resize-handle-resizable{
+    z-index:3 !important;
 }

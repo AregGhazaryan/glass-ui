@@ -4,90 +4,92 @@
 // Overrides: atom/tabs
 
 .tab-bar {
-  background-color: @tab-bar-background-color;
+    background-color: @tab-bar-background-color;
 
-  .tab {
-    box-shadow: 0 0rem 2rem rgba(0,0,0,.15) !important;
-    cursor: pointer;
-    color: @text-color;
-    height: @tab-height;
-    line-height: @tab-height;
-    font-size: @font-size;
-    flex: 4 !important;
-    overflow: none;
-    max-width: none !important;
-    min-width: none !important;
-    transition: 0.5s;
-    color: white !important;
-    background: rgb(255,45,45);
-    background: linear-gradient(65deg, rgba(255, 52, 113, 1) 0%, rgba(244, 0, 0, 1) 50%, rgba(255, 52, 113, 1) 100%);
-    background-position: 20rem;
-
-    .icon::before {
-      color: white !important;
-    }
-
-    .close-icon {
-      border-color: white !Important;
-      &:hover{
-        color: white !Important;
-      }
-    }
-
-    &.active {
-
-      .icon::before {
-        color: red !important;
-      }
-      background: white !Important;
-      transition: 0.2s;
-      color: red !important;
-
-      .close-icon:hover {
-        color:red !important;
+    .tab {
+        z-index: 1;
+        box-shadow: 0px 2px 5px rgba(0,0,0,.15) !important;
         cursor: pointer;
-      }
+        color: @text-color;
+        height: @tab-height;
+        line-height: @tab-height;
+        font-size: @font-size;
+        flex: 4 !important;
+        overflow: none;
+        max-width: none !important;
+        min-width: none !important;
+        transition: 0.5s;
+        color: white !important;
+        background: rgb(255,45,45);
+        background: linear-gradient(65deg, rgba(255, 52, 113, 1) 0%, rgba(244, 0, 0, 1) 50%, rgba(255, 52, 113, 1) 100%);
+        background-position: 20rem;
 
-      .close-icon {
-        border-color: @text-color-highlight !important;
-      }
-    }
+        .icon::before {
+            color: white !important;
+        }
 
-    &:hover {
-      transition: 0.2s;
-    }
-    // Modified Icon (the circle) -------------------
-    &.modified:not(:hover) .close-icon {
-      top: 50%;
-      right: @component-padding + 4px; // 4px -> half of icon size
-      margin-top: -3px;
-      border-color: @text-color-info;
-    }
+        .close-icon {
+            border-color: white !Important;
 
-    &.modified:hover .close-icon {
-      color: currentColor;
-    }
-    // Close Icon (the X) -------------------
-    .close-icon:hover {
-      cursor: pointer;
-      color: @text-color-selected;
-    }
+            &:hover {
+                color: white !Important;
+            }
+        }
 
-    &.active .close-icon:hover {
-      cursor: pointer;
-      color: @text-color;
-    }
-    // Dragging -------------------
-    // Styles get applied while dragging a tab
-    &.is-dragging {
-      background: darken(@tab-background-color, 10%);
-      border-color: transparent;
-      opacity: 0.5;
+        &.active {
+            box-shadow: 0 0 2rem rgba(0,0,0,.15) !important;
+            .icon::before {
+                color: red !important;
+            }
+            background: white !Important;
+            transition: 0.2s;
+            color: red !important;
 
-      & .close-icon {
-        cursor: pointer;
-        visibility: hidden;
-      }
+            .close-icon:hover {
+                color: red !important;
+                cursor: pointer;
+            }
+
+            .close-icon {
+                border-color: @text-color-highlight !important;
+            }
+        }
+
+        &:hover {
+            transition: 0.2s;
+        }
+        // Modified Icon (the circle) -------------------
+        &.modified:not(:hover) .close-icon {
+            top: 50%;
+            right: @component-padding + 4px; // 4px -> half of icon size
+            margin-top: -3px;
+            border-color: @text-color-info;
+        }
+
+        &.modified:hover .close-icon {
+            color: currentColor;
+        }
+        // Close Icon (the X) -------------------
+        .close-icon:hover {
+            cursor: pointer;
+            color: @text-color-selected;
+        }
+
+        &.active .close-icon:hover {
+            cursor: pointer;
+            color: @text-color;
+        }
+        // Dragging -------------------
+        // Styles get applied while dragging a tab
+        &.is-dragging {
+            background: darken(@tab-background-color, 10%);
+            border-color: transparent;
+            opacity: 0.5;
+
+            & .close-icon {
+                cursor: pointer;
+                visibility: hidden;
+            }
+        }
     }
-  }
 };
