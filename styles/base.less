@@ -3,6 +3,7 @@
 // Used for global styles
 // Or to override certain Atom core styles
 // -------------------
+
 body {
     font-size: @font-size;
     color: @text-color;
@@ -37,6 +38,36 @@ atom-pane {
     }
 }
 
-.indent-guide{
-    color:@border-color !important;
+.indent-guide {
+    color: @border-color !important;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    transition: 0.4s;
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    transition: 0.4s;
+    background: linear-gradient(65deg, rgba(219, 0, 92, 0.5) 0%, rgba(255, 0, 0, 0.5) 50%, rgba(255, 32, 119, 0.5) 100%);
+    box-shadow: 0 0px 2px 1px hsla(0, 0%, 0%, 0.13);
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    transition:0.4s;
+    background: linear-gradient(65deg, rgba(219, 0, 92, 0.8) 0%, rgba(255,0,0,0.8) 50%, rgba(255, 32, 119, 0.8) 100%);
+}
+
+.footer{
+    a{
+        cursor:pointer;
+    }
+    .inline-block{
+        cursor:pointer !important;
+    }
 }
