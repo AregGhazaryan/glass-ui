@@ -1,164 +1,175 @@
 // Git
 // -------------------
 // Used to color git status
+
 .status {
-  color: @text-color;
+    color: @text-color;
 }
 
 .status-added {
-  color: @text-color-success;
+    color: @text-color-success;
 }
 // green
 
 .status-ignored {
-  color: @text-color-subtle;
+    color: @text-color-subtle;
 }
 // faded
 
 .status-modified {
-  color: @text-color-warning;
+    color: @text-color-warning;
 }
 // orange
 
 .status-removed {
-  color: @text-color-error;
+    color: @text-color-error;
 }
 // red
 
 .status-renamed {
-  color: @text-color-info;
+    color: @text-color-info;
 }
 // blue
+
 .github-CommitView-editor {
-  background-color: white !important;
-  border-color: @border-color;
-
-  .github-CommitView-button {
-    color: white !important;
-  }
-
-  .github-CommitView-coAuthorToggle,
-  .github-CommitView-expandButton {
     background-color: white !important;
-    opacity: 1;
-  }
+    border-color: @border-color;
+
+    .github-CommitView-button {
+        color: white !important;
+    }
+
+    .github-CommitView-coAuthorToggle,
+    .github-CommitView-expandButton {
+        background-color: white !important;
+        opacity: 1;
+    }
 }
 
 .github-StagingView-header {
-  border-color: @border-color;
+    border-color: @border-color;
 }
 
 .github-StagingView-headerButton {
-  border-color: @border-color;
+    border-color: @border-color;
 }
 
 .github-CommitView-hardwrap {
-  background-color: white !important;
+    background-color: white !important;
 }
 
 .github-CommitView-buttonWrapper {
-  border-color: @border-color;
+    border-color: @border-color;
 
-  .btn {
-    opacity: 1;
-    cursor: pointer;
-    background-color: rgb(255,0,0);
-    background: -webkit-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
-    background: -o-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
-    background: linear-gradient(to right, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
-    color: white;
-  }
+    .btn {
+        opacity: 1;
+        cursor: pointer;
+        background-color: rgb(255,0,0);
+        background: -webkit-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
+        background: -o-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
+        background: linear-gradient(to right, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
+        color: white;
+    }
 }
 
 .github-RecentCommits {
-  border-color: @border-color;
+    border-color: @border-color;
 }
 
 .github-Accordion-header {
-  border-color: @border-color;
+    border-color: @border-color;
 }
 
 .github-Accordion-content {
-  border-color: @border-color;
+    border-color: @border-color;
 }
 
 .github-StagingView-group {
-  .github-StagingView-header {
-    .icon::before {
-      color: red !important;
+    .github-StagingView-header {
+        .icon::before {
+            color: red !important;
+        }
     }
-  }
 }
 
 .github-StagingView-headerButton.icon:before {
-  text-align: center;
+    text-align: center;
 }
 
 .github-StagingView-headerButton {
-  transition: 0.5s;
-  cursor: pointer;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .github-FilePatchView-controlBlock {
-  background-color: @border-color;
+    background-color: @border-color;
 }
 
 .github-FilePatchView-header {
-  background-color: @border-color;
+    background-color: @border-color;
 }
 
 .github-HunkHeaderView {
-  background-color: @border-color;
+    background-color: @border-color;
 }
 
 .github-HunkHeaderView-discardButton,
 .github-HunkHeaderView-stageButton,
 .github-HunkHeaderView-title {
-  &:hover {
-    cursor: pointer;
-    transition: 0.5s;
-    background-color: white;
-    color: red !important;
-  }
+    &:hover {
+        cursor: pointer;
+        transition: 0.5s;
+        background-color: white;
+        color: red !important;
+    }
 }
 
 .github-FilePatchView-title,
 .github-HunkHeaderView-discardButton,
 .github-HunkHeaderView-stageButton,
 .github-HunkHeaderView-title {
-  color: white !important;
+    color: white !important;
 }
 
 .github-CommitView-button {
-  transition: 0.5s;
-  opacity: 1;
-  background-color: rgb(255,0,0);
-  background: -webkit-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
-  background: -o-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
-  background: linear-gradient(to right, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
-  color: white;
-
-  &:hover {
     transition: 0.5s;
-    box-shadow: 2px 2px 10px rgb(255, 177, 212);
-    background-position: 400px;
-  }
-  &:active{
-    transition: 0.5s;
-    background-position: 0px;
+    opacity: 1;
     background-color: rgb(255,0,0);
     background: -webkit-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
     background: -o-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
     background: linear-gradient(to right, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
     color: white;
-  }
+
+    &:hover {
+        transition: 0.5s;
+        box-shadow: 2px 2px 10px rgb(255, 177, 212);
+        background-position: 400px;
+    }
+
+    &:active {
+        transition: 0.5s;
+        background-position: 0;
+        background-color: rgb(255,0,0);
+        background: -webkit-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
+        background: -o-linear-gradient(left, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
+        background: linear-gradient(to right, rgba(255,80,128,1) 7%, rgba(255,0,0,1) 42%, rgba(255,0,78,1) 72%, rgba(255,80,128,1) 92%);
+        color: white;
+    }
 }
 
-.github-FilePatchView-line--selected{
-    color:white !important;
+.github-FilePatchView-line--selected {
+    color: white !important;
 }
 
-.github-FilePatchView-line--added{
-    background-color:rgb(18, 222, 0);
-    color:white !important;
+.github-FilePatchView-line--added {
+    background-color: rgb(18, 222, 0);
+    color: white !important;
+}
+
+.github-FilePatchView-line--selected {
+    background-color: @mildred !important;
+}
+
+.scrollbar-corner {
+    overflow: hidden !important;
 }
